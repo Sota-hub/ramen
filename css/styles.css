@@ -3,10 +3,24 @@
 * {
   letter-spacing: 1px;
   color: #212226;
+  font-family: "Baloo Bhaijaan 2", cursive;
 }
 
 .process {
   height: 100vh;
+  text-align: center;
+}
+
+.process h1 {
+  color: #fffff1;
+  font-size: 3em;
+  font-weight: bolder;
+  padding-top: 1em;
+}
+
+.process p {
+  font-size: 1.2em;
+  color: #fffff1;
 }
 
 /* ============ Background colors =========== */
