@@ -8,6 +8,13 @@ $red: #d90404;
 
 $font1: "Baloo Bhaijaan 2", cursive;
 
+/* ============== Commonly used ============== */
+.align-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* ============ Styles for mobile ============ */
 * {
   letter-spacing: 1px;
@@ -16,7 +23,7 @@ $font1: "Baloo Bhaijaan 2", cursive;
 }
 
 .process {
-  height: 100vh;
+  // height: 100vh;
   text-align: center;
 
   h1 {
@@ -29,6 +36,39 @@ $font1: "Baloo Bhaijaan 2", cursive;
   p {
     font-size: 1.2em;
     color: $white;
+  }
+}
+
+.grid-display {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+  max-width: 80%;
+  margin: 3em 0;
+}
+
+.relative-position {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.hover-description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s, background-color 0.3s;
+  &:hover {
+    opacity: 1;
+    background-color: rgba(33, 34, 38, 0.75);
+  }
+  p {
+    font-size: 1.5em;
+    margin-top: 50%;
+    transform: translateY(-50%);
   }
 }
 
