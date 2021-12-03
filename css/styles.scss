@@ -51,25 +51,8 @@ $font1: "Baloo Bhaijaan 2", cursive;
   position: relative;
   border-radius: 8px;
   overflow: hidden;
-}
-
-.hover-description {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 0.3s, background-color 0.3s;
-  &:hover {
-    opacity: 1;
-    background-color: rgba(33, 34, 38, 0.75);
-  }
-  p {
-    font-size: 1.5em;
-    margin-top: 50%;
-    transform: translateY(-50%);
-  }
+  max-width: 275px;
+  max-height: 275px;
 }
 
 /* ============ Background colors =========== */
@@ -96,10 +79,36 @@ $font1: "Baloo Bhaijaan 2", cursive;
 /* ============== Media query ============== */
 /* Tablet */
 @media only screen and (min-width: 768px) {
+  .grid-display {
+    grid-gap: 3em;
+    margin: 6em 0;
+  }
+
+  .hover-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s, background-color 0.3s;
+    &:hover {
+      opacity: 1;
+      background-color: rgba(33, 34, 38, 0.75);
+    }
+    p {
+      font-size: 1.5em;
+      margin-top: 50%;
+      transform: translateY(-50%);
+    }
+  }
 }
 
 /* Desktop */
 @media only screen and (min-width: 992px) {
+  .grid-display {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 /* Huge */
