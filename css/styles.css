@@ -1,4 +1,35 @@
 /* ============  Color variables =========== */
+/* ============ Styles for mobile ============ */
+* {
+  letter-spacing: 1px;
+  color: #212226;
+}
+
+.process {
+  height: 100vh;
+}
+
+/* ============ Background colors =========== */
+.bg-black {
+  background-color: #212226;
+}
+
+.bg-green {
+  background-color: #72a603;
+}
+
+.bg-yellow {
+  background-color: #f29f05;
+}
+
+.bg-orange {
+  background-color: #d97218;
+}
+
+.bg-red {
+  background-color: #d90404;
+}
+
 /* ============== Media query ============== */
 /* Tablet */
 /* Desktop */

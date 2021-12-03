@@ -5,6 +5,39 @@ $yellow: #f29f05;
 $orange: #d97218;
 $red: #d90404;
 
+$font1: "Baloo Bhaijaan 2", cursive;
+
+/* ============ Styles for mobile ============ */
+* {
+  letter-spacing: 1px;
+  color: $black;
+}
+
+.process {
+  height: 100vh;
+}
+
+/* ============ Background colors =========== */
+.bg-black {
+  background-color: $black;
+}
+
+.bg-green {
+  background-color: $green;
+}
+
+.bg-yellow {
+  background-color: $yellow;
+}
+
+.bg-orange {
+  background-color: $orange;
+}
+
+.bg-red {
+  background-color: $red;
+}
+
 /* ============== Media query ============== */
 /* Tablet */
 @media only screen and (min-width: 768px) {
