@@ -1,4 +1,5 @@
 /* ============  Color variables =========== */
+$white: #fffff1;
 $black: #212226;
 $green: #72a603;
 $yellow: #f29f05;
@@ -11,10 +12,24 @@ $font1: "Baloo Bhaijaan 2", cursive;
 * {
   letter-spacing: 1px;
   color: $black;
+  font-family: $font1;
 }
 
 .process {
   height: 100vh;
+  text-align: center;
+
+  h1 {
+    color: $white;
+    font-size: 3em;
+    font-weight: bolder;
+    padding-top: 1em;
+  }
+
+  p {
+    font-size: 1.2em;
+    color: $white;
+  }
 }
 
 /* ============ Background colors =========== */
