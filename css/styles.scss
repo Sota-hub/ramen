@@ -8,54 +8,7 @@ $red: #d90404;
 
 $font1: "Baloo Bhaijaan 2", cursive;
 
-/* ============== Commonly used ============== */
-.align-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* ============ Styles for mobile ============ */
-* {
-  letter-spacing: 1px;
-  color: $black;
-  font-family: $font1;
-}
-
-.process {
-  // height: 100vh;
-  text-align: center;
-
-  h1 {
-    color: $white;
-    font-size: 3em;
-    font-weight: bolder;
-    padding-top: 1em;
-  }
-
-  p {
-    font-size: 1.2em;
-    color: $white;
-  }
-}
-
-.grid-display {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 1em;
-  max-width: 80%;
-  margin: 3em 0;
-}
-
-.relative-position {
-  position: relative;
-  border-radius: 8px;
-  overflow: hidden;
-  max-width: 275px;
-  max-height: 275px;
-}
-
-/* ============ Background colors =========== */
+/* ============ Background colors ============ */
 .bg-black {
   background-color: $black;
 }
@@ -76,12 +29,90 @@ $font1: "Baloo Bhaijaan 2", cursive;
   background-color: $red;
 }
 
-/* ============== Media query ============== */
-/* Tablet */
+/* ============== Commonly used ============== */
+.align-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.align-right {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.style-image {
+  max-width: 50%;
+  max-width: 275px;
+  max-height: 275px;
+}
+
+.width-60 {
+  width: 60%;
+}
+
+.padding-y-3 {
+  padding: 3em 0;
+}
+/* ============ Styles for mobile ============ */
+* {
+  letter-spacing: 1px;
+  color: $black;
+  font-family: $font1;
+}
+
+/* ================ Process 1 ================ */
+.process {
+  text-align: center;
+
+  h1 {
+    color: $white;
+    font-size: 3em;
+    font-weight: bolder;
+    padding-top: 1em;
+  }
+
+  p {
+    font-size: 1.2em;
+    color: $white;
+  }
+}
+
+.grid-display {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+  max-width: 80%;
+}
+
+.relative-position {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 275px;
+  max-height: 275px;
+}
+
+/* ================ Process 2 ================ */
+.p2-text {
+  width: 40%;
+  margin-top: 2em;
+}
+
+.p2-image-1 {
+  align-items: right;
+}
+
+.style-arrow {
+  padding: 0;
+}
+
+/* =========== Media query for Tablet ========== */
 @media only screen and (min-width: 768px) {
+  /* ================ Process 1 ================ */
   .grid-display {
     grid-gap: 3em;
-    margin: 6em 0;
   }
 
   .hover-description {
@@ -102,15 +133,27 @@ $font1: "Baloo Bhaijaan 2", cursive;
       transform: translateY(-50%);
     }
   }
-}
 
-/* Desktop */
-@media only screen and (min-width: 992px) {
-  .grid-display {
-    grid-template-columns: 1fr 1fr 1fr;
+  /* ================ Process 2 ================ */
+  .style-arrow {
+    transform: rotate(-10deg);
   }
 }
 
-/* Huge */
+/* ========== Media query for Desktop ========== */
+@media only screen and (min-width: 992px) {
+  /* ================ Process 1 ================ */
+  .grid-display {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  /* ================ Process 2 ================ */
+  .style-arrow {
+    transform: rotate(-20deg);
+    padding: 0;
+  }
+}
+
+/* =========== Media query for Huge =========== */
 @media only screen and (min-width: 1280px) {
 }
