@@ -1,4 +1,25 @@
 /* ============  Color variables =========== */
+/* ============ Background colors ============ */
+.bg-black {
+  background-color: #212226;
+}
+
+.bg-green {
+  background-color: #72a603;
+}
+
+.bg-yellow {
+  background-color: #f29f05;
+}
+
+.bg-orange {
+  background-color: #d97218;
+}
+
+.bg-red {
+  background-color: #d90404;
+}
+
 /* ============== Commonly used ============== */
 .align-center {
   display: -webkit-box;
@@ -12,6 +33,32 @@
           align-items: center;
 }
 
+.align-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.style-image {
+  max-width: 50%;
+  max-width: 275px;
+  max-height: 275px;
+}
+
+.width-60 {
+  width: 60%;
+}
+
+.padding-y-3 {
+  padding: 3em 0;
+}
+
 /* ============ Styles for mobile ============ */
 * {
   letter-spacing: 1px;
@@ -19,6 +66,7 @@
   font-family: "Baloo Bhaijaan 2", cursive;
 }
 
+/* ================ Process 1 ================ */
 .process {
   text-align: center;
 }
@@ -42,7 +90,6 @@
       grid-template-columns: 1fr 1fr;
   grid-gap: 1em;
   max-width: 80%;
-  margin: 3em 0;
 }
 
 .relative-position {
@@ -53,33 +100,27 @@
   max-height: 275px;
 }
 
-/* ============ Background colors =========== */
-.bg-black {
-  background-color: #212226;
+/* ================ Process 2 ================ */
+.p2-text {
+  width: 40%;
+  margin-top: 2em;
 }
 
-.bg-green {
-  background-color: #72a603;
+.p2-image-1 {
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
 }
 
-.bg-yellow {
-  background-color: #f29f05;
+.style-arrow {
+  padding: 0;
 }
 
-.bg-orange {
-  background-color: #d97218;
-}
-
-.bg-red {
-  background-color: #d90404;
-}
-
-/* ============== Media query ============== */
-/* Tablet */
+/* =========== Media query for Tablet ========== */
 @media only screen and (min-width: 768px) {
+  /* ================ Process 1 ================ */
   .grid-display {
     grid-gap: 3em;
-    margin: 6em 0;
   }
   .hover-description {
     position: absolute;
@@ -101,15 +142,27 @@
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
+  /* ================ Process 2 ================ */
+  .style-arrow {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
 }
 
-/* Desktop */
+/* ========== Media query for Desktop ========== */
 @media only screen and (min-width: 992px) {
+  /* ================ Process 1 ================ */
   .grid-display {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
   }
+  /* ================ Process 2 ================ */
+  .style-arrow {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+    padding: 0;
+  }
 }
 
-/* Huge */
+/* =========== Media query for Huge =========== */
 /*# sourceMappingURL=styles.css.map */
