@@ -122,6 +122,25 @@ header {
   padding: 0;
 }
 
+
+/* ================ Process 6-9 ================ */
+h4 {
+  border: #fffff1;
+  border-radius: 2em;
+  margin: auto;
+  color: white;
+  width: 50%;
+  opacity: 0;
+  transition: opacity 0.3s, background-color 0.3s;
+  &:hover {
+    opacity: 1;
+    background-color: rgba(33, 34, 38, 0.75);
+  }
+}
+
+.my-img {
+  margin: auto;
+=======
 .line-image {
   width: 35%;
   margin: 0 1em;
@@ -130,6 +149,7 @@ header {
 .grid-p5 {
   display: grid;
   grid-template-columns: 1fr 1fr;
+
 }
 
 /* =========== Media query for Tablet ========== */
