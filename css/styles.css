@@ -33,6 +33,18 @@
   align-items: center;
 }
 
+.align-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .style-image {
   max-width: 50%;
   max-width: 275px;
@@ -47,11 +59,23 @@
   padding: 3em 0;
 }
 
+.p-text {
+  max-width: 80%;
+  margin-top: 0.5em;
+}
+
 /* ============ Styles for mobile ============ */
 * {
   letter-spacing: 1px;
   color: #212226;
   font-family: "Baloo Bhaijaan 2", cursive;
+}
+
+header {
+  text-align: center;
+  font-size: 64px;
+  font-weight: 900;
+  margin: 2em 0;
 }
 
 /* ================ Process 1 ================ */
@@ -87,11 +111,6 @@
 }
 
 /* ================ Process 2 ================ */
-.p2-text {
-  width: 40%;
-  margin-top: 2em;
-}
-
 .p2-image-1 {
   align-items: right;
 }
@@ -99,6 +118,7 @@
 .style-arrow {
   padding: 0;
 }
+
 
 /* ================ Process 6-9 ================ */
 h4 {
@@ -118,6 +138,18 @@ h4:hover {
 
 .my-img {
   margin: auto;
+=======
+.line-image {
+  width: 35%;
+  margin: 0 1em;
+}
+
+.grid-p5 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+
 }
 
 /* =========== Media query for Tablet ========== */
@@ -145,6 +177,9 @@ h4:hover {
     transform: translateY(-50%);
   }
   /* ================ Process 2 ================ */
+  .p2-text {
+    max-width: 60%;
+  }
   .style-arrow {
     transform: rotate(-10deg);
   }
@@ -157,9 +192,18 @@ h4:hover {
     grid-template-columns: 1fr 1fr 1fr;
   }
   /* ================ Process 2 ================ */
+  .p2-text {
+    max-width: 40%;
+  }
   .style-arrow {
     transform: rotate(-20deg);
     padding: 0;
+  }
+  .grid-p3 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
