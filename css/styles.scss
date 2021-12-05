@@ -108,6 +108,25 @@ $font1: "Baloo Bhaijaan 2", cursive;
   padding: 0;
 }
 
+/* ================ Process 6-9 ================ */
+h4 {
+  border: #fffff1;
+  border-radius: 2em;
+  margin: auto;
+  color: white;
+  width: 50%;
+  opacity: 0;
+  transition: opacity 0.3s, background-color 0.3s;
+  &:hover {
+    opacity: 1;
+    background-color: rgba(33, 34, 38, 0.75);
+  }
+}
+
+.my-img {
+  margin: auto;
+}
+
 /* =========== Media query for Tablet ========== */
 @media only screen and (min-width: 768px) {
   /* ================ Process 1 ================ */

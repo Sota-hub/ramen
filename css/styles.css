@@ -22,27 +22,15 @@
 
 /* ============== Commonly used ============== */
 .align-center {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .align-right {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: right;
+  align-items: center;
 }
 
 .style-image {
@@ -84,10 +72,8 @@
 }
 
 .grid-display {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 1em;
   max-width: 80%;
 }
@@ -107,13 +93,31 @@
 }
 
 .p2-image-1 {
-  -webkit-box-align: right;
-      -ms-flex-align: right;
-          align-items: right;
+  align-items: right;
 }
 
 .style-arrow {
   padding: 0;
+}
+
+/* ================ Process 6-9 ================ */
+h4 {
+  border: #fffff1;
+  border-radius: 2em;
+  margin: auto;
+  color: white;
+  width: 50%;
+  opacity: 0;
+  transition: opacity 0.3s, background-color 0.3s;
+}
+
+h4:hover {
+  opacity: 1;
+  background-color: rgba(33, 34, 38, 0.75);
+}
+
+.my-img {
+  margin: auto;
 }
 
 /* =========== Media query for Tablet ========== */
@@ -129,7 +133,6 @@
     width: 100%;
     height: 100%;
     opacity: 0;
-    -webkit-transition: opacity 0.3s, background-color 0.3s;
     transition: opacity 0.3s, background-color 0.3s;
   }
   .hover-description:hover {
@@ -139,13 +142,11 @@
   .hover-description p {
     font-size: 1.5em;
     margin-top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    transform: translateY(-50%);
   }
   /* ================ Process 2 ================ */
   .style-arrow {
-    -webkit-transform: rotate(-10deg);
-            transform: rotate(-10deg);
+    transform: rotate(-10deg);
   }
 }
 
@@ -153,16 +154,13 @@
 @media only screen and (min-width: 992px) {
   /* ================ Process 1 ================ */
   .grid-display {
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
   /* ================ Process 2 ================ */
   .style-arrow {
-    -webkit-transform: rotate(-20deg);
-            transform: rotate(-20deg);
+    transform: rotate(-20deg);
     padding: 0;
   }
 }
 
 /* =========== Media query for Huge =========== */
-/*# sourceMappingURL=styles.css.map */
