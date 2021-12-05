@@ -42,6 +42,12 @@ $font1: "Baloo Bhaijaan 2", cursive;
   align-items: center;
 }
 
+.align-left {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
 .style-image {
   max-width: 50%;
   max-width: 275px;
@@ -55,11 +61,23 @@ $font1: "Baloo Bhaijaan 2", cursive;
 .padding-y-3 {
   padding: 3em 0;
 }
+
+.p-text {
+  max-width: 80%;
+  margin-top: 0.5em;
+}
 /* ============ Styles for mobile ============ */
 * {
   letter-spacing: 1px;
   color: $black;
   font-family: $font1;
+}
+
+header {
+  text-align: center;
+  font-size: 64px;
+  font-weight: 900;
+  margin: 2em 0;
 }
 
 /* ================ Process 1 ================ */
@@ -95,10 +113,6 @@ $font1: "Baloo Bhaijaan 2", cursive;
 }
 
 /* ================ Process 2 ================ */
-.p2-text {
-  width: 40%;
-  margin-top: 2em;
-}
 
 .p2-image-1 {
   align-items: right;
@@ -107,6 +121,7 @@ $font1: "Baloo Bhaijaan 2", cursive;
 .style-arrow {
   padding: 0;
 }
+
 
 /* ================ Process 6-9 ================ */
 h4 {
@@ -125,6 +140,16 @@ h4 {
 
 .my-img {
   margin: auto;
+=======
+.line-image {
+  width: 35%;
+  margin: 0 1em;
+}
+
+.grid-p5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
 }
 
 /* =========== Media query for Tablet ========== */
@@ -154,6 +179,10 @@ h4 {
   }
 
   /* ================ Process 2 ================ */
+  .p2-text {
+    max-width: 60%;
+  }
+
   .style-arrow {
     transform: rotate(-10deg);
   }
@@ -167,9 +196,18 @@ h4 {
   }
 
   /* ================ Process 2 ================ */
+  .p2-text {
+    max-width: 40%;
+  }
+
   .style-arrow {
     transform: rotate(-20deg);
     padding: 0;
+  }
+
+  .grid-p3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
